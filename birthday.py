@@ -36,7 +36,7 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
-Stone Age = 
+Stone Age < 1980
 
 name = input("Hello, what is your name?")
 month = input("Hi " + name + ", what was the name of the month you were born in?")
