@@ -37,6 +37,9 @@ todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
 Stone Age < 1980
+eighties = range(1980, 1990)
+nineties = range(1990, 2000)
+two thousands = range(2000, 3000)
 
 name = input("Hello, what is your name?")
 month = input("Hi " + name + ", what was the name of the month you were born in?")
