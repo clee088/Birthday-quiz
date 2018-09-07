@@ -42,5 +42,8 @@ year = input("And what year were you born in, " + name + "?")
 day = input("And the day?")
 
 birthday = month, day, year
-print(birthday)
+halloween == October, 31, year
+if birthday = halloween:
+    print("You were born on Halloween!")
+    
 #print(name + "you are a " + season + " of the " title)
