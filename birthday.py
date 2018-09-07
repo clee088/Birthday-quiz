@@ -43,7 +43,7 @@ day = input("And the day?")
 
 birthday = month, day, year
 halloween == October, 31, year
-if birthday = halloween:
+if birthday == halloween:
     print("You were born on Halloween!")
     
 #print(name + "you are a " + season + " of the " title)
