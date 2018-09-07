@@ -40,10 +40,3 @@ name = input("Hello, what is your name?")
 month = input("Hi " + name + ", what was the name of the month you were born in?")
 year = input("And what year were you born in, " + name + "?")
 day = input("And the day?")
-
-birthday = month, day, year
-halloween == October, 31, year
-if birthday == halloween:
-    print("You were born on Halloween!")
-    
-#print(name + "you are a " + season + " of the " title)
