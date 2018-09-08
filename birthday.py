@@ -39,9 +39,14 @@ todayyear = datetime.today().year
 
 
 name = input("Hello, what is your name?")
-month = input("Hi " + name + ", what was the name of the month you were born in?")
+month.lower() = str(input("Hi " + name + ", what was the name of the month you were born in?"))
 year = int(input("And what year were you born in, " + name + "?"))
 day = int(input("And the day?"))
+
+if month == "October" and day == 31:
+    print("You were born on Halloween!")
+elif month == todaymonth and day == todaydate:
+    print("Happy birthday!")
 
 if year >= 1980 and year <= 1989:
     gen = "eighties"
@@ -52,22 +57,18 @@ elif year >= 2000:
 elif year < 1980:
     gen = "Stone Age"
 
-if month == "December" or month == "January" or month == "February":
+if month == "december" or month == "january" or month == "february":
     season = "winter"
 else:
-    if month == "March" or month == "April" or month == "May":
+    if month == "march" or month == "april" or month == "may":
         season = "spring"
     else:
-        if month == "June" or month == "July" or month == "August":
+        if month == "june" or month == "july" or month == "august":
             season = "summer"
         else:
-            if month == "September" or month == "October" or month == "November":
+            if month == "september" or month == "october" or month == "november":
                 season = "fall"
 
-if month == "October" and day == 31:
-    print("You were born on Halloween!")
-elif month == todaymonth and day == todaydate:
-    print("Happy birthday!")
 else:
     print(name + ", you are a", season, "baby of the", gen, ".")
 
