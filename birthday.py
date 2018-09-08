@@ -36,10 +36,6 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
-Stone Age < 1980
-eighties = range(1980, 1990)
-nineties = range(1990, 2000)
-two thousands = range(2000, 3000)
 
 name = input("Hello, what is your name?")
 month = input("Hi " + name + ", what was the name of the month you were born in?")
@@ -47,4 +43,3 @@ year = input("And what year were you born in, " + name + "?")
 day = input("And the day?")
 
 
-print(name + "you are a " + season + " of the " title)
