@@ -52,14 +52,17 @@ elif year >= 2000:
 elif year < 1980:
     gen = "Stone Age"
 
-if month == "December" or "January" or"February":
+if month == "December" or month == "January" or month == "February":
     season = "winter"
-elif month == "March" or "April" or "May":
-    season = "spring"
-elif month == "June" or "July" or "August":
-    season = "summer"
-elif month == "September" or "October" or "November":
-    season == "fall"
+else:
+    if month == "March" or month == "April" or month == "May":
+        season = "spring"
+    else:
+        if month == "June" or month == "July" or month == "August":
+            season = "summer"
+        else:
+            if month == "September" or month == "October" or month == "November":
+                season == "fall"
 
 if month == "October" and day == 31:
     print("You were born on Halloween!")
