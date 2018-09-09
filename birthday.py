@@ -35,7 +35,6 @@ from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
-todayyear = datetime.today().year
 
 
 name = input("Hello, what is your name?")
@@ -47,26 +46,23 @@ if month == "October" and day == 31:
     print("You were born on Halloween!")
 elif month == todaymonth and day == todaydate:
     print("Happy birthday!")
-    
-if month == "december" or month == "january" or month == "february":
-    season = "winter"
-elif month == "march" or month == "april" or month == "may":
-    season = "spring"
-elif month == "june" or month == "july" or month == "august":
-    season = "summer"
-elif month == "september" or month == "october" or month == "november":
-    season = "fall"
+else:
+    if month == "December" or month == "January" or month == "February":
+        season = "winter"
+    elif month == "March" or month == "April" or month == "May":
+        season = "spring"
+    elif month == "June" or month == "July" or month == "August":
+        season = "summer"
+    elif month == "September" or month == "October" or month == "November":
+        season = "fall"
 
-if year >= 1980 and year <= 1989:
-    gen = "eighties"
-elif year >= 1990 and year <= 1999:
-    gen = "nineties"
-elif year >= 2000:
-    gen = "two thousands"
-elif year < 1980:
-    gen = "Stone Age"
-
-
-
-print(name + ", you are a", season, "baby of the", gen, ".")
+    if year >= 1980 and year <= 1989:
+        gen = "eighties"
+    elif year >= 1990 and year <= 1999:
+        gen = "nineties"
+    elif year >= 2000:
+        gen = "two thousands"
+    elif year < 1980:
+        gen = "Stone Age"
+    print(name + ", you are a", season, "baby of the", gen, ".")
 
