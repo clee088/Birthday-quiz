@@ -34,11 +34,12 @@ Example Session
 from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
+todaymonth = month_name[todaymonth].lower()
 todaydate = datetime.today().day
 
 
 name = input("Hello, what is your name?")
-month = input("Hi " + name + ", what was the name of the month you were born in?")
+month = input("Hi " + name + ", what was the name of the month you were born in?").lower()
 year = int(input("And what year were you born in, " + name + "?"))
 day = int(input("And the day?"))
 
@@ -47,13 +48,13 @@ if month == "October" and day == 31:
 elif day == todaydate and month == todaymonth:
     print("Happy birthday!")
 else:
-    if month == "December" or month == "January" or month == "February":
+    if month == "december" or month == "january" or month == "february":
         season = "winter"
-    elif month == "March" or month == "April" or month == "May":
+    elif month == "march" or month == "april" or month == "may":
         season = "spring"
-    elif month == "June" or month == "July" or month == "August":
+    elif month == "june" or month == "july" or month == "august":
         season = "summer"
-    elif month == "September" or month == "October" or month == "November":
+    elif month == "september" or month == "october" or month == "november":
         season = "fall"
 
     if year >= 1980 and year <= 1989:
