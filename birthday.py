@@ -64,6 +64,6 @@ else:
     elif year >= 2000:
         gen = "two thousands"
     elif year < 1980:
-        gen = "Stone Age"
+        gen = "Stone age"
     print(name + ", you are a", season, "baby of the", gen + ".")
 
